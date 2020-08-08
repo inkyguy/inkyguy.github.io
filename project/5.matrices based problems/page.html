@@ -1,0 +1,99 @@
+<!DOCTYPE html  PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN'  'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'><html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<title>Matrices based problems</title>
+</head><body><span style="font-size: 16pt">1)Dole Out Cadbury<br/>
+</span><img src="capture47.png"/><img src="capture48.png"/><span style="font-size: 16pt"><br/>
+</span><span style="font-size: 16pt">------------------------------------------------------------------------------------------------------------------------------------------<br/>
+2)<br/>
+</span><span style="font-size: 15pt">A man is doing an something experiment with the device that he built newly. The structure of the device is shown  as below diagram.<a href="https://1.bp.blogspot.com/-WccJXLZ7xyU/XtnsiwqPibI/AAAAAAAAAsE/bL7XTEmfGFEmv-nHCQGSt5Te3v5S6v3UwCK4BGAsYHg/s367/1.PNG"><img height="346" src="https://1.bp.blogspot.com/-WccJXLZ7xyU/XtnsiwqPibI/AAAAAAAAAsE/bL7XTEmfGFEmv-nHCQGSt5Te3v5S6v3UwCK4BGAsYHg/w400-h346/1.PNG" width="400"/></a>B to E is a sloping surface with n holes, labelled H1, H2,H3 ... Hn, on it. Holes are of different diameters &amp; depths. The man is releasing m no.of balls of different diameters from the point B one after the other.<br/>
+ <div style="text-align: justify">He wants to ﬁnd the positions of each ball after the experiment.  The specialties of the device are as follow:<br/>
+</div> <br/>
+<div style="text-align: justify">1. A ball will fall into a hole, if and only if its diameter is less than or equal to the diameter of the hole.<br/>
+</div> <br/>
+<div style="text-align: justify">2. A hole Hi will become Non empty i.e Full, if i no. of balls fall into it. For ex hole labelled as H3 will become full if THREE balls fall into it.<br/>
+</div> <br/>
+<div style="text-align: justify">3. If a hole is full then no more balls can fall into that hole . <br/>
+</div> <br/>
+<div style="text-align: justify">4. A ball will reach the bottom point E from B, only if it is not falling into any 1 of the holes.<br/>
+</div> <br/>
+</span><span style="font-size: 15pt">Please help him in ﬁnding the eventual position of the balls. If a ball is in hole Pi, then take its position as i. If a ball reached the bottom point E, then take its position as 0</span>. <br/>
+ <br/>
+<img src="capture49.png"/><br/>
+<img src="image.png"/><br/>
+<img src="capture51.png"/><br/>
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------<br/>
+<span style="font-size: 16pt">3)<br/>
+</span><img src="capture52.png"/><span style="font-size: 16pt"><br/>
+</span><img src="capture53.png"/><span style="font-size: 16pt"><br/>
+</span><img src="capture54.png"/><br/>
+<br/>
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------<br/>
+<span style="font-size: 15pt">4)Grooving Monkeys<br/>
+</span><img src="capture55.png"/><br/>
+<img src="capture56.png"/><br/>
+<img src="image 2.png"/><br/>
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------<br/>
+<span style="font-size: 16pt">5)<br/>
+</span><img src="capture58.png"/><br/>
+<img src="image 3.png"/><br/>
+<img src="image 4.png"/><br/>
+<img src="image 5.png"/><img src="image 6.png"/><br/>
+<img src="capture63.png"/><br/>
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------<br/>
+<span style="font-size: 16pt">6)<br/>
+</span><img src="image 7.png"/><span style="font-size: 16pt"><br/>
+</span><img src="image 8.png"/><span style="font-size: 16pt"><br/>
+</span><img src="image 9.png"/><span style="font-size: 16pt"><br/>
+</span><img src="image 10.png"/><br/>
+<span style="font-size: 14pt">n=int(input())<br/>
+l=[[0 for i in range(n)] for j in range(n)]<br/>
+low=0<br/>
+high=n-1<br/>
+k=power=1<br/>
+m=int((n+1)/2)<br/>
+a=[]<br/>
+a.append((0,0))<br/>
+for i in range(m):<br/>
+  for j in range(low,high+1):<br/>
+    l[low][j]=k<br/>
+    if k%11==0:<br/>
+      power+=1<br/>
+      a.append((low,j))<br/>
+    k+=1<br/>
+  for j in range(low+1,high+1):<br/>
+    l[j][high]=k<br/>
+    if k%11==0:<br/>
+      power+=1<br/>
+      a.append((j,high))<br/>
+    k+=1<br/>
+  for j in range(high-1,low-1,-1):<br/>
+    l[high][j]=k<br/>
+    if k%11==0:<br/>
+      power+=1<br/>
+      a.append((high,j))<br/>
+    k+=1<br/>
+  for j in range(high-1,low,-1):<br/>
+    l[j][low]=k<br/>
+    if k%11==0:<br/>
+      power+=1<br/>
+      a.append((j,low))<br/>
+    k+=1<br/>
+  low=low+1<br/>
+  high=high-1<br/>
+for i in range(n):<br/>
+  for j in range(n):<br/>
+    print(l[i][j],end=' ')<br/>
+  print()<br/>
+print(&quot;Total Power Points &quot;,power) <br/>
+for i in a:<br/>
+  print(i)<br/>
+</span><br/>
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------<br/>
+<span style="font-size: 16pt">7)<br/>
+</span><img src="image 11.png"/><br/>
+<img src="image 12.png"/><br/>
+<span style="font-size: 16pt"><br/>
+</span><br/>
+<br/>
+</body></html>

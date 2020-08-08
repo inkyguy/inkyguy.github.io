@@ -1,0 +1,116 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
+<body>
+<style>
+.node
+{
+    padding-left: 20px;
+    display: block;
+}
+
+.node_collapsed
+{
+    padding-left: 20px;
+    display: none;
+
+    
+    visibility: hidden;
+    display: none;
+}
+
+
+
+a:active
+{
+text-decoration:none;
+color: #0000FF;
+font-weight: bold;
+}
+
+a:visited
+{
+text-decoration:none;
+color: #000;
+font-weight: bold;
+}
+
+a:link
+{
+text-decoration:none;
+color: #000;
+font-weight: bold;
+}
+
+a:hover
+{
+text-decoration: underline;
+color: #500;
+font-weight: bold;
+}
+
+</style>
+
+
+<script language="javascript">
+  
+    var displayStates = [];
+
+    function showDiv(div)
+    {    
+        div.style.height     = "";
+        div.style.display    = "block";
+        div.style.visibility = "visible";
+    }
+
+    function hideDiv(div)
+    {
+        div.style.height     = "0px";
+        div.style.display    = "none";      
+        div.style.visibility = "hidden";
+    }
+
+    function toggleDiv(div, defaultState)
+    {
+
+        // set default on first use
+        if (displayStates[div] == undefined)
+            displayStates[div] = defaultState;
+
+        // toggle state
+        displayStates[div] = !displayStates[div];       
+
+        // hide / show
+        if (displayStates[div])
+            showDiv(div);
+        else {
+            hideDiv(div);
+        }
+    }
+
+    function toggleDivName(divname, defaultState)
+    {
+        toggleDiv(document.getElementById(divname), defaultState);
+    }
+
+</script>
+
+<nobr><tt><a href='javascript: toggleDivName("072d1c6b-9783-4af4-bf98-163ffbfe8e81", true)'>+</a>&nbsp;</tt>codevita</nobr><br/>
+<div id='072d1c6b-9783-4af4-bf98-163ffbfe8e81' class='node'><nobr><tt><a href='javascript: toggleDivName("de488c90-5dc2-4961-be3b-e508f4fe9666", true)'>+</a>&nbsp;</tt><a href='1.importance%20of%20constraints%20and%20bit%20mani/page.html' target='viewer'>1.Importance of Constraints and Bit Manipulation</a></nobr><br/>
+<div id='de488c90-5dc2-4961-be3b-e508f4fe9666' class='node'><nobr><tt><a href='javascript: toggleDivName("bb7448bd-0209-41f3-87a0-ab9d7dea6ec3", false)'>+</a>&nbsp;</tt><a href='1.importance%20of%20constraints%20and%20bit%20mani/a.bitwise%20based%20problems/page.html' target='viewer'>a.bitwise based problems</a></nobr><br/>
+<div id='bb7448bd-0209-41f3-87a0-ab9d7dea6ec3' class='node_collapsed'><nobr><tt>&nbsp;&nbsp;</tt><a href='1.importance%20of%20constraints%20and%20bit%20mani/a.bitwise%20based%20problems/simple%20logical%20problems/page.html' target='viewer'>simple logical problems</a></nobr><br/>
+<nobr><tt>&nbsp;&nbsp;</tt><a href='1.importance%20of%20constraints%20and%20bit%20mani/a.bitwise%20based%20problems/simple%20logical%20problems%202/page.html' target='viewer'>simple logical problems</a></nobr><br/>
+</div>
+</div>
+<nobr><tt>&nbsp;&nbsp;</tt><a href='2.recursion%20and%20functions/page.html' target='viewer'>2.recursion and functions</a></nobr><br/>
+<nobr><tt>&nbsp;&nbsp;</tt><a href='3.mathematical%20problems/page.html' target='viewer'>3.Mathematical Problems</a></nobr><br/>
+<nobr><tt>&nbsp;&nbsp;</tt><a href='4.arrays/page.html' target='viewer'>4.Arrays</a></nobr><br/>
+<nobr><tt>&nbsp;&nbsp;</tt><a href='5.matrices%20based%20problems/page.html' target='viewer'>5.Matrices based problems</a></nobr><br/>
+<nobr><tt>&nbsp;&nbsp;</tt><a href='6.sring%20based%20problems/page.html' target='viewer'>6.Sring based problems</a></nobr><br/>
+<nobr><tt>&nbsp;&nbsp;</tt><a href='7.searching%20and%20sorting/page.html' target='viewer'>7.Searching and Sorting</a></nobr><br/>
+<nobr><tt>&nbsp;&nbsp;</tt><a href='8.dynamic%20proramming/page.html' target='viewer'>8.Dynamic proramming </a></nobr><br/>
+<nobr><tt>&nbsp;&nbsp;</tt><a href='9.greedy%20approach/page.html' target='viewer'>9.Greedy approach</a></nobr><br/>
+<nobr><tt>&nbsp;&nbsp;</tt><a href='trash' target='viewer'>Trash</a></nobr><br/>
+</div>
+</body></html>

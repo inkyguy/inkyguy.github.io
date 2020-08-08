@@ -1,0 +1,114 @@
+<!DOCTYPE html  PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN'  'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'><html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<title>1.Importance of Constraints and Bit Manipulation</title>
+</head><body><b><span style="color: #ff0000"><span style="font-family: Viner Hand ITC"><span style="font-size: 31pt">NOTES OF HALFBLOOD PRINC<u>EEE</u>:</span></span><span style="font-size: 13pt"><br/>
+</span><span style="font-size: 13pt"><br/>
+</span></span><span style="font-size: 13pt"><span style="color: #000000"><br/>
+codevita compiles processes only 10^8 instructions per second<br/>
+<br/>
+we should go for time complexity less than O(10^8) ie O(log(n)) <br/>
+<br/>
+we know 10^3 ~2^10<br/>
+for given constraints is n=10^8<br/>
+it can be written as (10^3)^4<br/>
+so (2^10)^4 so O(log(2^40)) (here log has base 2)<br/>
+so n=40log2base2<br/>
+time complexity=40.<br/>
+</span></span></b><b><span style="font-size: 13pt"><span style="color: #000000">---------------------------</span></span></b><span style="color: #000000"><span style="font-size: 12pt">--------</span></span><span style="font-size: 12pt">---------------------------------------------------------------------------------------------------------------------------------------------------<br/>
+</span><b>practice spiral, wave pattterns<br/>
+</b><b>1)</b><br/>
+<br/>
+<img src="unique element in array.png"/><br/>
+<b><span style="font-size: 13pt"><u>Ans:</u><br/>
+<br/>
+a=[1,2,3,4,4,5,5,6,1,2]<br/>
+res=0<br/>
+</span></b><b><span style="font-size: 13pt">for i in a:</span></b><ul><li style="list-style-type: none"><b><span style="font-size: 13pt">res^=i  #XOR of duplicate elements will be eliminated</span></b></li>
+</ul>
+<span style="font-size: 13pt"><b>print(res)<br/>
+<br/>
+here time complexity is O(n)<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+               Time Complexities:<br/>
+               <img src="time complexities.png"/><br/>
+<br/>
+<br/>
+</b></span><span style="font-size: 12pt">--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------<br/>
+</span><span style="font-size: 11pt"><b><br/>
+</b></span><span style="font-size: 11pt"><b>2)</b></span><br/>
+<b><span style="font-size: 12pt"><img src="sorting array.png"/><br/>
+select the sorting technique with less time complexity<br/>
+</span></b><span style="font-size: 12pt">--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------<br/>
+<b><br/>
+</b></span><span style="font-size: 12pt"><b>3)by doing n&amp;n-1 till n==0, we can count number of 1's in a number</b></span><br/>
+<img src="counting number on 1s in a number.png"/><br/>
+<b><br/>
+</b><span style="font-size: 12pt"><br/>
+<br/>
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------<br/>
+<br/>
+<br/>
+<b>formula for ones compliment of a number: 1's compliment of n = -(n+1) it is called hack</b><br/>
+</span><img src="ones compliment =-(n+1).png"/><br/>
+<br/>
+<span style="font-size: 12pt">--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------<br/>
+</span><br/>
+<br/>
+<b><span style="font-size: 13pt">Retrieving kth bit of a number from its binary format : we use right shift operator here</span></b><br/>
+<img src="retrieving nth bit from binaryformat.png"/><br/>
+<span style="font-size: 12pt">--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</span><br/>
+<b><span style="font-size: 13pt"><br/>
+</span></b><b><span style="font-size: 13pt">Setting a bit as 1 in binary sequence:</span></b><br/>
+<br/>
+<br/>
+<img src="setting a bit as 1.png"/><br/>
+<br/>
+<b><span style="font-size: 13pt"><br/>
+</span></b><b><span style="font-size: 13pt">Setting a bit as 0 in binary sequence:</span></b><br/>
+<img src="set bit as 0.png"/><br/>
+<br/>
+<span style="font-size: 12pt">--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</span><br/>
+<br/>
+<img src="number is power of 2 or not.png"/><br/>
+<br/>
+<br/>
+<span style="font-size: 12pt">--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------<br/>
+</span><br/>
+<img src="position offirst 1 from r to l.png"/><br/>
+<span style="font-size: 12pt">--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</span><br/>
+<br/>
+<img src="binar representation of number.png"/><br/>
+                        <img height="400" src="decimaltobinary.png" width="523"/><br/>
+<br/>
+<span style="font-size: 12pt">--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</span><br/>
+<b><span style="font-size: 14pt">5)using xor operator swapping two variables<br/>
+<br/>
+x=x^y<br/>
+y=xy<br/>
+</span></b><b><span style="font-size: 14pt">x=x^y</span></b><br/>
+<br/>
+<span style="font-size: 12pt">--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------<br/>
+</span><br/>
+                                <img src="swapping upper and lower case letters.png"/><br/>
+<br/>
+                      <img height="400" src="upperlowerswap.png" width="587"/><br/>
+<br/>
+<br/>
+<span style="font-size: 12pt">--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</span><br/>
+<b><span style="font-size: 15pt"><br/>
+7) check nmber is even or odd:<br/>
+<br/>
+num&amp;1==1<ul><li style="list-style-type: none">its odd</li>
+</ul>
+</span></b><b><span style="font-size: 15pt">else </span></b><ul><b><span style="font-size: 15pt"><li style="list-style-type: none">even</li>
+<li style="list-style-type: none"/>
+</span></b></ul>
+<span style="font-size: 12pt">--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</span><br/>
+<br/>
+<br/>
+<br/>
+</body></html>
